@@ -1,6 +1,3 @@
-1004. Max Consecutive Ones III
-
-
 class Solution {
     public int longestOnes(int[] nums, int k) {
         int left=0,right=0;
