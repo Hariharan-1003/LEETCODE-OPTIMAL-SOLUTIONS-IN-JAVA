@@ -1,0 +1,21 @@
+class Solution {
+    public int[] twoSum(int[] numbers, int target) {
+        int[] nums = new int[2];
+        int left = 0;
+        int i=numbers.length-1;
+        while(i>left){
+            if(numbers[i]+numbers[left]<target ){
+                left++;
+            }
+            else if(numbers[i]+numbers[left]==target){
+                nums[0]=left+1;
+                nums[1] = i+1;
+                break;
+            }
+            else{
+                i--;
+            }
+        }
+        return nums;
+    }
+}
